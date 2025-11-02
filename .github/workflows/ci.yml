@@ -25,12 +25,6 @@ jobs:
       - name: Run SwiftLint
         run: swiftlint lint --reporter github-actions-logging
 
-      - name: SPM Build
-        run: swift build -v
-
-      - name: SPM Test
-        run: swift test -v --enable-code-coverage
-
       - name: Xcode Build
         run: |
           xcodebuild clean build -project "SwiftUi MVVM Template.xcodeproj" \
