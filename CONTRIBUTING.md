@@ -8,7 +8,7 @@ Getting started
 
 ```bash
 # clone your fork
-git clone git@github.com:<your-username>/swiftui-mvvm-template.git
+git clone git@github.com:<your-username>/swiftui-clean-architecture-starter.git
 cd swiftui-mvvm-template
 # create a branch for your work
 git checkout -b feat/your-feature
