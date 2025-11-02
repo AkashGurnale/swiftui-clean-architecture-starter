@@ -32,13 +32,13 @@ jobs:
         run: |
           xcodebuild clean build -project "SwiftUi MVVM Template.xcodeproj" \
             -scheme "SwiftUi MVVM Template" \
-            -destination "platform:iOS Simulator, arch:arm64, id:089EF9E6-8AA6-4878-9687-64E7BCE86CC3, OS:26.0.1, name:iPhone 16 " \
+            -destination "platform=iOS Simulator,name=iPhone 16 Pro" \
             CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 
       - name: Xcode Test
         run: |
           xcodebuild test -project "SwiftUi MVVM Template.xcodeproj" \
             -scheme "SwiftUi MVVM Template" \
-            -destination "platform:iOS Simulator, arch:arm64, id:089EF9E6-8AA6-4878-9687-64E7BCE86CC3, OS:26.0.1, name:iPhone 16 " \
+            -destination "platform=iOS Simulator,name=iPhone 16 Pro" \
             -enableCodeCoverage YES \
             CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
