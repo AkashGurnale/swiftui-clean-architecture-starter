@@ -1,6 +1,5 @@
 # SwiftUI MVVM Template
 
-[![CI/CD](https://github.com/AkashGurnale/swiftui-clean-architecture-starter/actions/workflows/ci.yml/badge.svg)](https://github.com/AkashGurnale/swiftui-clean-architecture-starter/actions/workflows/ci.yml)
 
 SwiftUI · MVVM · Repository Pattern · Combine · Async/Await · Clean Architecture
 
