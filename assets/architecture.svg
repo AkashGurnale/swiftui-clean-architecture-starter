@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420">
+  <rect x="16" y="16" width="968" height="388" rx="14" fill="#ffffff" stroke="#e6eef8"/>
+  <text x="36" y="48" font-family="Helvetica, Arial" font-size="18" fill="#0a2540">Architecture Overview</text>
+  <!-- Core -->
+  <rect x="36" y="68" width="220" height="120" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="56" y="92" font-family="Helvetica, Arial" font-size="14" fill="#0a2540">Core</text>
+  <text x="56" y="112" font-family="Helvetica, Arial" font-size="12" fill="#374151">RequestBuilder</text>
+  <text x="56" y="128" font-family="Helvetica, Arial" font-size="12" fill="#374151">NetworkEngine</text>
+  <text x="56" y="144" font-family="Helvetica, Arial" font-size="12" fill="#374151">HTTPHeaders</text>
+
+  <!-- Data -->
+  <rect x="280" y="68" width="220" height="120" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="300" y="92" font-family="Helvetica, Arial" font-size="14" fill="#0a2540">Data</text>
+  <text x="300" y="112" font-family="Helvetica, Arial" font-size="12" fill="#374151">DTOs</text>
+  <text x="300" y="128" font-family="Helvetica, Arial" font-size="12" fill="#374151">LocalDataSource</text>
+  <text x="300" y="144" font-family="Helvetica, Arial" font-size="12" fill="#374151">Mappers</text>
+
+  <!-- Domain -->
+  <rect x="524" y="68" width="220" height="120" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="544" y="92" font-family="Helvetica, Arial" font-size="14" fill="#0a2540">Domain</text>
+  <text x="544" y="112" font-family="Helvetica, Arial" font-size="12" fill="#374151">Models</text>
+
+  <!-- Presentation -->
+  <rect x="36" y="210" width="708" height="160" rx="8" fill="#ffffff" stroke="#e6eef8"/>
+  <text x="56" y="234" font-family="Helvetica, Arial" font-size="14" fill="#0a2540">Presentation</text>
+  <text x="56" y="254" font-family="Helvetica, Arial" font-size="12" fill="#374151">Views (SwiftUI)</text>
+  <text x="56" y="274" font-family="Helvetica, Arial" font-size="12" fill="#374151">ViewModels</text>
+  <text x="56" y="294" font-family="Helvetica, Arial" font-size="12" fill="#374151">AppFactory</text>
+
+  <!-- Arrows -->
+  <line x1="256" y1="124" x2="280" y2="124" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="500" y1="124" x2="524" y2="124" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="280" y1="188" x2="280" y2="210" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrow)" />
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L0,10 L10,5 z" fill="#9ca3af" />
+    </marker>
+  </defs>
+
+</svg>

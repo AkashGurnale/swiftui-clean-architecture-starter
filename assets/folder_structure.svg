@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420" viewBox="0 0 800 420">
+  <rect x="8" y="8" width="784" height="404" rx="12" fill="#fff" stroke="#e6eef8"/>
+  <text x="28" y="36" font-family="Helvetica, Arial" font-size="18" fill="#0a2540">Suggested Folder Structure</text>
+  <g font-family="Helvetica, Arial" font-size="12" fill="#0a2540">
+    <text x="36" y="68">App/</text>
+    <text x="56" y="88">• AppFactory.swift</text>
+    <text x="56" y="104">• SwiftUi_MVVM_TemplateApp.swift</text>
+
+    <text x="36" y="136">Core/</text>
+    <text x="56" y="156">• Endpoints/</text>
+    <text x="76" y="172">• APIEndpoint.swift</text>
+    <text x="76" y="188">• UsersEndpoint.swift</text>
+    <text x="56" y="204">• Network/</text>
+    <text x="76" y="220">• RequestBuilder.swift</text>
+    <text x="76" y="236">• URLSessionNetworkEngine.swift</text>
+
+    <text x="36" y="268">Users/</text>
+    <text x="56" y="288">• DTOs/</text>
+    <text x="76" y="304">• UserDTO.swift</text>
+    <text x="56" y="320">• ViewModel/</text>
+    <text x="76" y="336">• UsersListViewModel.swift</text>
+  </g>
+</svg>

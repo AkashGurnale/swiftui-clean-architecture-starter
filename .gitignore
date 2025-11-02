@@ -1,0 +1,36 @@
+# Xcode
+.DS_Store
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+
+# Swift Package Manager
+/.build/
+/Packages/
+/.swiftpm/
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/Build/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+
+# Xcode Server
+integration/
+
+# User settings
+*.xcuserdatad
+
+# Mac
+*.DS_Store
+
+# Misc
+*.swp
+*.lock
