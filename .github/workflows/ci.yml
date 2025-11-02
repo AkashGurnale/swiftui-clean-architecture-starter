@@ -45,9 +45,3 @@ jobs:
             -destination "platform=iOS Simulator,name=iPhone 15 Pro" \
             -enableCodeCoverage YES \
             CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
-
-      - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v3
-        with:
-          swift: true
-          fail_ci_if_error: true
