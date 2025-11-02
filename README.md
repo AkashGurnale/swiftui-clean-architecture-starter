@@ -1,5 +1,7 @@
 # SwiftUI MVVM Template
 
+[![CI/CD](https://github.com/AkashGurnale/swiftui-clean-architecture-starter/actions/workflows/ci.yml/badge.svg)](https://github.com/AkashGurnale/swiftui-clean-architecture-starter/actions/workflows/ci.yml)
+
 SwiftUI · MVVM · Repository Pattern · Combine · Async/Await · Clean Architecture
 
 A minimal, opinionated Swift + SwiftUI starter template demonstrating a clean MVVM architecture with async/await, a layered networking stack, DTO-to-domain mapping, and simple local caching.
