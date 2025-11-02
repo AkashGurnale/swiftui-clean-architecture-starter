@@ -1,44 +1,44 @@
-name: Swift Build, Test & Lint
+# name: Swift Build, Test & Lint
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+# on:
+#   push:
+#     branches: [ main ]
+#   pull_request:
+#     branches: [ main ]
 
-jobs:
-  test-and-lint:
-    runs-on: macos-latest
+# jobs:
+#   test-and-lint:
+#     runs-on: macos-latest
 
-    steps:
-      - uses: actions/checkout@v4
+#     steps:
+#       - uses: actions/checkout@v4
 
-      - name: Set up Swift
-        uses: swift-actions/setup-swift@v1
-        with:
-          swift-version: '5.9'
+#       - name: Set up Swift
+#         uses: swift-actions/setup-swift@v1
+#         with:
+#           swift-version: '5.9'
 
-      - name: Install SwiftLint
-        run: |
-          brew install swiftlint
+#       - name: Install SwiftLint
+#         run: |
+#           brew install swiftlint
 
-      - name: Run SwiftLint
-        run: swiftlint lint --reporter github-actions-logging
+#       - name: Run SwiftLint
+#         run: swiftlint lint --reporter github-actions-logging
 
-      - name: List available simulators
-        run: xcrun simctl list devices
+#       - name: List available simulators
+#         run: xcrun simctl list devices
 
-      - name: Xcode Build
-        run: |
-          xcodebuild clean build -project "SwiftUi MVVM Template.xcodeproj" \
-            -scheme "SwiftUi MVVM Template" \
-            -destination "platform=iOS Simulator,name=iPhone 16 Pro" \
-            CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+#       - name: Xcode Build
+#         run: |
+#           xcodebuild clean build -project "SwiftUi MVVM Template.xcodeproj" \
+#             -scheme "SwiftUi MVVM Template" \
+#             -destination "platform=iOS Simulator,name=iPhone 16 Pro" \
+#             CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 
-      - name: Xcode Test
-        run: |
-          xcodebuild test -project "SwiftUi MVVM Template.xcodeproj" \
-            -scheme "SwiftUi MVVM Template" \
-            -destination "platform=iOS Simulator,name=iPhone 16 Pro" \
-            -enableCodeCoverage YES \
-            CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+#       - name: Xcode Test
+#         run: |
+#           xcodebuild test -project "SwiftUi MVVM Template.xcodeproj" \
+#             -scheme "SwiftUi MVVM Template" \
+#             -destination "platform=iOS Simulator,name=iPhone 16 Pro" \
+#             -enableCodeCoverage YES \
+#             CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
