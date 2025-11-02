@@ -44,7 +44,7 @@ struct UsersListView: View {
                         Button("Reload") {
                             viewModel.fetchUsers(forceRefresh: true)
                         }
-                        .buttonStyle(.glass)
+                        .buttonStyle(.bordered)
                     }
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                 case .loaded:
@@ -55,7 +55,7 @@ struct UsersListView: View {
                             Button("Reload") {
                                 viewModel.fetchUsers(forceRefresh: true)
                             }
-                            .buttonStyle(.glass)
+                            .buttonStyle(.bordered)
                         }
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                     } else {

@@ -36,7 +36,7 @@ struct UserDetailsView: View {
                     Button("Retry") {
                         viewModel.fetchUserDetails()
                     }
-                    .buttonStyle(.glass)
+                    .buttonStyle(.bordered)
                 }
                 .padding()
             case .loaded:
